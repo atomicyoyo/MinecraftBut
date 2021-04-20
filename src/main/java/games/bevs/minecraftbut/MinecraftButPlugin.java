@@ -52,7 +52,6 @@ public class MinecraftButPlugin extends JavaPlugin
 		
 		Bukkit.broadcastMessage(Bukkit.getServer().getClass().getPackage().toString());
 		this.scenerarioManager.registerSenerario(new EnderDragonAppears(butWorld));
-		this.scenerarioManager.registerSenerario(new NoJump(butWorld));
 		this.scenerarioManager.registerSenerario(new OneHit(butWorld));
 		this.scenerarioManager.registerSenerario(new RainingBlocks(butWorld));
 		this.scenerarioManager.registerSenerario(new TheLavaRises(butWorld));
@@ -71,6 +70,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new ShrinkingInventory(butWorld));
 		this.scenerarioManager.registerSenerario(new MobsMultiple(butWorld));
 		this.scenerarioManager.registerSenerario(new SunDeath(butWorld));
+		this.scenerarioManager.registerSenerario(new LinkedInventories(butWorld));
 
 
 
@@ -78,7 +78,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		{
 			this.scenerarioManager.registerSenerario(new MathOrStop(butWorld));
 			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
-			this.scenerarioManager.registerSenerario(new LinkedInventories(butWorld));
+			this.scenerarioManager.registerSenerario(new NoJump(butWorld));
 		}
 	}
 	
